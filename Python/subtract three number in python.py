@@ -1,6 +1,12 @@
 #program for subtracting three numbers
-x=76
-y=56
-z=78
-t=x-y-z
-print(t)
+while True:
+    try:
+        x=int(input("Enter the first number: "))
+        y=int(input("Enter the second number: "))
+        z=int(input("Enter the third number: "))
+        t=x-y-z
+        print(f"The difference of {x}, {y} nad {z} is",t)
+        break
+    except ValueError:
+        print("Enter a valid number")
+        continue
